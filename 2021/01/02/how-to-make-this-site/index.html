@@ -22,21 +22,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"www.mr-zzhua.com","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="为什么要搭建该个人网站写博客的初衷是希望通过写的过程增进自己对已学知识的理解。在过去的学习过程中发现学过的东西在用的时候经常掉链子，于是意识到自己学的并不扎实。而且由于上了年纪发现记忆力没有以前好了，老话说的对，好记性不如烂笔头，只不过现在不用笔了改用键盘了。再者把学过的东西用写的方式复述出来，是个温故知新的过程，可以加深理解。最后把学过的东西记录下来，方便以后查找，毕竟以后会长期在一个领域里摸索">
+<meta name="description" content="简介本站点使用非常受欢迎的博客生成框架Hexo构建。该框架使用大名鼎鼎的Node.js来完成页面渲染，速度非常快，号称几秒内生成上百个网页。支持Markdown，让发表博文变得非常简单，关键是Markdown已经足够满足我对写作的需求。能非常方便的一键部署，前期配置稍微繁琐，但换来的是快速部署，当然预览也是非常方便的。丰富的插件和强大的扩展性，一方面让博客部署变得非常简单，另一方面可以让页面变得非">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何搭建本博客">
-<meta property="og:url" content="http://www.mr-zzhua.com/2020/05/18/build-a-blog-site/index.html">
+<meta property="og:title" content="构建本网站的流程">
+<meta property="og:url" content="http://www.mr-zzhua.com/2021/01/02/how-to-make-this-site/index.html">
 <meta property="og:site_name" content="张振华的个人网站">
-<meta property="og:description" content="为什么要搭建该个人网站写博客的初衷是希望通过写的过程增进自己对已学知识的理解。在过去的学习过程中发现学过的东西在用的时候经常掉链子，于是意识到自己学的并不扎实。而且由于上了年纪发现记忆力没有以前好了，老话说的对，好记性不如烂笔头，只不过现在不用笔了改用键盘了。再者把学过的东西用写的方式复述出来，是个温故知新的过程，可以加深理解。最后把学过的东西记录下来，方便以后查找，毕竟以后会长期在一个领域里摸索">
+<meta property="og:description" content="简介本站点使用非常受欢迎的博客生成框架Hexo构建。该框架使用大名鼎鼎的Node.js来完成页面渲染，速度非常快，号称几秒内生成上百个网页。支持Markdown，让发表博文变得非常简单，关键是Markdown已经足够满足我对写作的需求。能非常方便的一键部署，前期配置稍微繁琐，但换来的是快速部署，当然预览也是非常方便的。丰富的插件和强大的扩展性，一方面让博客部署变得非常简单，另一方面可以让页面变得非">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-18T17:32:21.000Z">
-<meta property="article:modified_time" content="2020-12-23T01:26:15.500Z">
+<meta property="article:published_time" content="2021-01-02T09:05:47.000Z">
+<meta property="article:modified_time" content="2021-01-21T09:02:13.400Z">
 <meta property="article:author" content="张振华">
 <meta property="article:tag" content="misc">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.mr-zzhua.com/2020/05/18/build-a-blog-site/">
+<link rel="canonical" href="http://www.mr-zzhua.com/2021/01/02/how-to-make-this-site/">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>如何搭建本博客 | 张振华的个人网站</title>
+<title>构建本网站的流程 | 张振华的个人网站</title>
   
 
 
@@ -158,7 +158,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E5%BB%BA%E8%AF%A5%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">为什么要搭建该个人网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E6%9C%AC%E7%BD%91%E7%AB%99%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">搭建本网站的过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87"><span class="nav-number">2.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A6%96%E5%85%88%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">3.1.</span> <span class="nav-text">首先需要安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">3.1.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">3.1.2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">3.1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8GitHub%E4%B8%8A%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E7%94%A8%E6%9D%A5%E5%AD%98%E5%82%A8GitHub-Pages"><span class="nav-number">3.2.</span> <span class="nav-text">在GitHub上创建一个代码仓库用来存储GitHub Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6"><span class="nav-number">3.3.</span> <span class="nav-text">创建一个网站的基本框架</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -239,7 +239,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.mr-zzhua.com/2020/05/18/build-a-blog-site/">
+    <link itemprop="mainEntityOfPage" href="http://www.mr-zzhua.com/2021/01/02/how-to-make-this-site/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -256,7 +256,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          如何搭建本博客
+          构建本网站的流程
         </h1>
 
         <div class="post-meta-container">
@@ -267,14 +267,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2020-05-18 19:32:21" itemprop="dateCreated datePublished" datetime="2020-05-18T19:32:21+02:00">2020-05-18</time>
+      <time title="创建时间：2021-01-02 10:05:47" itemprop="dateCreated datePublished" datetime="2021-01-02T10:05:47+01:00">2021-01-02</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-23 02:26:15" itemprop="dateModified" datetime="2020-12-23T02:26:15+01:00">2020-12-23</time>
+        <time title="修改时间：2021-01-21 10:02:13" itemprop="dateModified" datetime="2021-01-21T10:02:13+01:00">2021-01-21</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -282,7 +282,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Misc/" itemprop="url" rel="index"><span itemprop="name">Misc</span></a>
+          <a href="/categories/misc/" itemprop="url" rel="index"><span itemprop="name">misc</span></a>
         </span>
     </span>
 
@@ -294,7 +294,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>256</span>
+      <span>1.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -312,8 +312,34 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="为什么要搭建该个人网站"><a href="#为什么要搭建该个人网站" class="headerlink" title="为什么要搭建该个人网站"></a>为什么要搭建该个人网站</h1><p>写博客的初衷是希望通过写的过程增进自己对已学知识的理解。<br>在过去的学习过程中发现学过的东西在用的时候经常掉链子，于是意识到自己学的并不扎实。<br>而且由于上了年纪发现记忆力没有以前好了，老话说的对，好记性不如烂笔头，只不过现在不用笔了改用键盘了。<br>再者把学过的东西用写的方式复述出来，是个温故知新的过程，可以加深理解。<br>最后把学过的东西记录下来，方便以后查找，毕竟以后会长期在一个领域里摸索，遇到相同问题，重复利用知识的机会很多。<br>而自己写的东西理解起来更快，也省去Google的时间了。</p>
-<h1 id="搭建本网站的过程"><a href="#搭建本网站的过程" class="headerlink" title="搭建本网站的过程"></a>搭建本网站的过程</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>本站点使用非常受欢迎的博客生成框架<code>Hexo</code>构建。<br>该框架使用大名鼎鼎的<code>Node.js</code>来完成页面渲染，速度非常快，号称几秒内生成上百个网页。<br>支持<code>Markdown</code>，让发表博文变得非常简单，关键是<code>Markdown</code>已经足够满足我对写作的需求。<br>能非常方便的一键部署，前期配置稍微繁琐，但换来的是快速部署，当然预览也是非常方便的。<br>丰富的插件和强大的扩展性，一方面让博客部署变得非常简单，另一方面可以让页面变得非常绚丽。</p>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>前面简单介绍了<code>Hexo</code>，但本文的重点是实现以下三个目标。</p>
+<ul>
+<li>使用<code>Hexo</code>生成静态站点，并配置一键部署、使用自定义主题等。</li>
+<li>使用<code>GitHub Pages</code>功能托管一个博客站点。</li>
+<li>使用自己的域名来访问前面生成的站点。</li>
+</ul>
+<p>其中第三个目标是可选的，毕竟不是每个人都需要一个自己的网址，<code>GitHub</code>给的免费网址已经够用了。<br>如果自己的<code>GitHub</code>名称很具有识别性，那就更好了。</p>
+<a id="more"></a>
+
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="首先需要安装Hexo"><a href="#首先需要安装Hexo" class="headerlink" title="首先需要安装Hexo"></a>首先需要安装Hexo</h3><p><code>Hexo</code>的有两个重要依赖：<code>Git</code>和<code>Node.js</code>。<br>如果已有前面的两个程序，而且能正常使用，可以跳过下面的步骤，直接去看xxx的内容。<br>我平时用<code>Debian</code>，所以下面都是再<code>Linux</code>平台下的操作。<br>需要其它平台的，可前往官方文档查阅。官方文档也有中文版，但感觉不够详细。</p>
+<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装<code>Git</code></h4><p>我自己的电脑我有<code>root</code>权限，所以直接用<code>sudo</code>来安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install git-core</span><br></pre></td></tr></table></figure>
+<p>当然，还有其它的方式，比如下载特定发行版本的<code>Git</code>自行编译后部署，但显然此处不涉及这方面的内容。<br>自行编译并部署的方法是为了获取特定版本的程序，这对于使用<code>Debian</code>的人来说是家常便饭，毕竟该发行版本非常注重程序的稳定性（这也是我选用<code>Debian</code>的重要原因）。</p>
+<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装<code>Node.js</code></h4><p>同样的，使用<code>sudo</code>来安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br></pre></td></tr></table></figure>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h4><p>其实<code>Hexo</code>是用<code>JavaScript</code>写成的一个包，该包被托管再<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a>，在前面成功安装<code>Node.js</code>后，可以很方便的使用一并安装的<code>npm</code>命令来安装需要的包。所以安装<code>Hexo</code>简单到只需要一个命令行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="在GitHub上创建一个代码仓库用来存储GitHub-Pages"><a href="#在GitHub上创建一个代码仓库用来存储GitHub-Pages" class="headerlink" title="在GitHub上创建一个代码仓库用来存储GitHub Pages"></a>在<code>GitHub</code>上创建一个代码仓库用来存储<code>GitHub Pages</code></h3><p>我们的最终目的是用<code>GitHub</code>的<code>GitHub Pages</code>功能来托管我们的站点。<br>所以需要根据创建<code>GitHub Pages</code>的方法来创建一个用于托管网站内容的仓库。<br>该部分内容在<code>GitHub</code>上有很详细的步骤说明，在此略过该部分。<br>但为了后面用<code>hexo</code>命令创建新的网站，假定我们在<code>GitHub</code>上有一个名为<code>github-account-name.github.io</code>的仓库。<br>为了在提交内容时不产生冲突，我们不在该仓库中添加任何文件。</p>
+<h3 id="创建一个网站的基本框架"><a href="#创建一个网站的基本框架" class="headerlink" title="创建一个网站的基本框架"></a>创建一个网站的基本框架</h3><p>我们在完成前面的步骤后，后续的工作便是新建一个网站的基本框架。<br><code>Hexo</code>会提供一个默认的主题，但是该主题比较朴素，所以我们后续会使用一个非常漂亮的主题，名叫<a target="_blank" rel="noopener" href="https://theme-next.org/">NexT</a>。</p>
+<p>第一步是用<code>hexo</code>起始一个新的项目，我们暂时把这个项目命名为<code>github-account-name.github.io</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init github-account-name.github.io</span><br></pre></td></tr></table></figure>
+<p>然后需要进入到该文件中并安装必要的包。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd github-account-name.github.io</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>新建后的文件夹下应该至少有一下内容。不同版本的<code>Hexo</code>构建的网站草稿可能存在差别。但<code>_config.yml</code>是必须的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">github-account-name.github.io</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── node_modules</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<p>&lt;–! vim: set ai nospell ts=4 tw=500: –&gt;</p>
+
     </div>
 
     
@@ -343,11 +369,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2020/08/18/python-string-format/" rel="prev" title="Python中格式化字符串的13个例子">
+                  <i class="fa fa-chevron-left"></i> Python中格式化字符串的13个例子
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/08/18/python-string-format/" rel="next" title="Python中格式化字符串的13个例子">
-                  Python中格式化字符串的13个例子 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
