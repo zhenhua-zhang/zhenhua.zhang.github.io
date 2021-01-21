@@ -93,4 +93,4 @@ github-account-name.github.io
 └── themes
 ```
 
-<--! vim: set ai nospell ts=4 tw=500: -->
+<!--vim: set ai nospell ts=4 tw=500:-->
