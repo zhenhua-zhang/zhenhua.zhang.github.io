@@ -22,18 +22,22 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"www.mr-zzhua.com","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="藏在格村的生信猿 发际线特高组组长 半吊子骑行爱好者 浅水区游泳小能手">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张振华的个人网站">
-<meta property="og:url" content="http://www.mr-zzhua.com/tags/misc/index.html">
+<meta name="description" content="简介我平时的工作环境是Debian，用的最多的工具是终端，更确切地说是Neovim内置的终端模拟器。命令行工具是我最喜欢的工具类型，方便快捷，节省资源。当然我没有说图形化的工具不好，好看好玩儿的图形化工具我也很喜欢，只是觉得命令行更简洁。再就是生信行业里工具更新换代快，针对的用户群体也特殊，不需要绚丽的UI，只要实用就行。谈到实用，最典型的例子就是排序一个文件，Linux下只需要一个sort命令就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="命令行实例（Linux）">
+<meta property="og:url" content="http://www.mr-zzhua.com/2021/01/25/linux-tips/index.html">
 <meta property="og:site_name" content="张振华的个人网站">
-<meta property="og:description" content="藏在格村的生信猿 发际线特高组组长 半吊子骑行爱好者 浅水区游泳小能手">
+<meta property="og:description" content="简介我平时的工作环境是Debian，用的最多的工具是终端，更确切地说是Neovim内置的终端模拟器。命令行工具是我最喜欢的工具类型，方便快捷，节省资源。当然我没有说图形化的工具不好，好看好玩儿的图形化工具我也很喜欢，只是觉得命令行更简洁。再就是生信行业里工具更新换代快，针对的用户群体也特殊，不需要绚丽的UI，只要实用就行。谈到实用，最典型的例子就是排序一个文件，Linux下只需要一个sort命令就">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-24T23:00:00.000Z">
+<meta property="article:modified_time" content="2021-01-25T12:47:41.842Z">
 <meta property="article:author" content="张振华">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="cli">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://www.mr-zzhua.com/tags/misc/">
+<link rel="canonical" href="http://www.mr-zzhua.com/2021/01/25/linux-tips/">
 
 
 <script class="page-configurations">
@@ -41,11 +45,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>标签: misc | 张振华的个人网站</title>
+<title>命令行实例（Linux） | 张振华的个人网站</title>
   
 
 
@@ -142,7 +146,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -155,6 +159,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8%E4%BA%8C%E3%80%81%E5%85%AB%E3%80%81%E5%8D%81%E3%80%81%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E5%BF%AB%E9%80%9F%E5%8F%8D%E5%A4%8D%E6%A8%AA%E8%B7%B3%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">在二、八、十、十六进制之间快速反复横跳？</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -224,73 +229,136 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">misc
-          <small>标签</small>
-        </h2>
-      </div>
 
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.mr-zzhua.com/2021/01/25/linux-tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="张振华">
+      <meta itemprop="description" content="藏在格村的生信猿</br>
+发际线特高组组长</br>
+半吊子骑行爱好者</br>
+浅水区游泳小能手</br>
+">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张振华的个人网站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          命令行实例（Linux）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-01-25 00:00:00 / 修改时间：13:47:41" itemprop="dateCreated datePublished" datetime="2021-01-25T00:00:00+01:00">2021-01-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+        </span>
+    </span>
+
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我平时的工作环境是Debian，用的最多的工具是终端，更确切地说是Neovim内置的终端模拟器。<br>命令行工具是我最喜欢的工具类型，方便快捷，节省资源。<br>当然我没有说图形化的工具不好，好看好玩儿的图形化工具我也很喜欢，只是觉得命令行更简洁。<br>再就是生信行业里工具更新换代快，针对的用户群体也特殊，不需要绚丽的UI，只要实用就行。<br>谈到实用，最典型的例子就是排序一个文件，Linux下只需要一个sort命令就够了。<br>使用图形界面工具可能比较麻烦，而且占用资源也多。<br>这篇记录了一些常用的命令行技巧，多是来自技术问答网站，比如stackoverflow。<br>每个标题都是一个问题，我尽量让这些问题简洁明了，问题下面会有简单介绍。<br>当然是实际例子是最重要的部分，对于每个例子都会有相应的解释。</p>
+<a id="more"></a>
+
+<h2 id="在二、八、十、十六进制之间快速反复横跳？"><a href="#在二、八、十、十六进制之间快速反复横跳？" class="headerlink" title="在二、八、十、十六进制之间快速反复横跳？"></a>在二、八、十、十六进制之间快速反复横跳？</h2><p>最近一段时间在研究各类压缩文件格式，涉及很多字节上的操作。<br>常常需要在不同进制之间反复横跳，网页搜索太麻烦、自己写工具需要考虑太多。<br>索性问谷歌怎么能实现命令行下快速反复横跳，谷歌也是爽快，直接隔了答案。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># bc是一个命令行计算器（的确是计算器）。但我们可以借助它不同进制之间反复横跳。</span><br><span class="line"># 默认情况下，输入是十进制。所以，转换十进制到其它进制时可简写为：</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;obase&#x3D;2;10&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;obase&#x3D;8;10&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;obase&#x3D;10;10&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;obase&#x3D;16;10&quot;</span><br><span class="line"></span><br><span class="line"># 通过ibase可设置输入的进制。</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;ibase&#x3D;16;obase&#x3D;2;A&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;ibase&#x3D;16;obase&#x3D;8;A&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;ibase&#x3D;16;obase&#x3D;10;A&quot;</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;ibase&#x3D;16;obase&#x3D;16;A&quot;</span><br><span class="line"></span><br><span class="line"># 更骚的是你可以随意设置base。例如，我们假设输入是16进制，然后创造一个3进制的系</span><br><span class="line"># 统，可用以下命令行实现。</span><br><span class="line">$&gt; bc &lt;&lt;&lt;&quot;ibase&#x3D;16;obase&#x3D;3;A&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<!-- vim: set nospell: -->
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-01-02T10:05:47+01:00"
-              content="2021-01-02">
-          01-02
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="张振华 微信">
+        <span>微信</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/01/02/how-to-make-this-site/" itemprop="url">
-            <span itemprop="name">构建本网站的流程</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-05-18T19:32:21+02:00"
-              content="2020-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/18/build-a-blog-site/" itemprop="url">
-            <span itemprop="name">如何搭建本博客</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/cli/" rel="tag"># cli</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/01/02/how-to-make-this-site/" rel="prev" title="构建本网站的流程">
+                  <i class="fa fa-chevron-left"></i> 构建本网站的流程
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
 
 
 <script>
