@@ -80,7 +80,7 @@ $ cd github-account-name.github.io
 $ npm install
 ```
 
-新建后的文件夹下应该至少有一下内容。不同版本的`Hexo`构建的网站草稿可能存在差别。但`_config.yml`是必须的。
+新建后的文件夹下应该至少有一下内容。不同版本的`Hexo`构建的网站基本结构可能存在差别，但`_config.yml`是必须的。
 ```
 github-account-name.github.io
 ├── _config.landscape.yml
@@ -93,4 +93,4 @@ github-account-name.github.io
 └── themes
 ```
 
-<!--vim: set ai nospell ts=4 tw=500:-->
+<!-- vim: set ai nospell ts=4 tw=500 ft=pandoc:-->

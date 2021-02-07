@@ -233,3 +233,5 @@ class HAL9000(object):
 
 print('{:open-the-pod-bay-doors}'.format(HAL9000()))
 ```
+
+<!-- vim: set ai nospell ts=4 tw=500 ft=pandoc: -->
